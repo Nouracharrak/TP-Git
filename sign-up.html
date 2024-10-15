@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="Css/Style.Css">
+</head>
+<body>
+    <h2> Sign Up</h2>
+            <form method="post" action="" enctype="multipart/form-data"> 
+    
+                <p> required *</p>
+            <label for="name"> Name *</label>
+            <br>
+            <input type="text" id="name" name="name" placeholder="Your name" required pattern="[A-Za-z ]{2,30}" maxlength="30" title=" You can use alphabets, capital letters or not, minimum two and maximume thirteen">
+            <br>
+            <label for="Pseudo"> Pseudo *</label>
+            <br>
+            <input type="text" id="Pseudo" name="Pseudo" placeholder="Your Pseudo" required pattern="[A-Za-z ]{2,30}" maxlength="30" title="You can use alphabets, capital letters or not, minimum two and maximume thirteen""> <br>
+            <label for="email"> Email *</label>
+            <br>
+            <input type="email" id= "email" name="email" placeholder="Your email" pattern="([a-zA-Z0-9\-_.@]{5,20})" required>
+            <br>
+            <label for="password"> Create Your password * </label>
+            <br>
+            <input  type="password" id="password" name=" Mot de passe" placeholder="Your Password" required pattern=([a-zA-Z0-9\-_.@]{5,20})>
+            <br>
+            <label for="Confirm password"> Confirm your password * </label>
+            <br>
+            <input  type="Confirm password" id="Confirm password" name=" Confirm password" placeholder="Confirm password" required pattern=([a-zA-Z0-9\-_.@]{5,20})><br>
+            <label for="submit"> Sign up </label><br>
+            <input class="SignUp" type="submit" name="SignUp" value= "SignUp">
+            </form>
+</body>
+</html>

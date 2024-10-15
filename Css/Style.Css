@@ -1,0 +1,54 @@
+h2{
+    text-align: center;
+}
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #7e815d;
+    border-radius: 5px;
+    background-color: rgb(142, 92, 48);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: beige;
+    padding: 1.5rem 0 0rem 0;
+}
+label a{
+    color: black;
+}
+label a:hover{
+    color: beige;
+    text-decoration: underline;
+    }
+
+form input {
+    width: 30%;
+    padding: 1rem;
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
+    border: 5px solid #bbb297;
+    border-radius: 6px;
+}
+
+form button {
+        padding: 10px 15px;
+        background-color: #b79312;
+        color: beige;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+form .SignUp:hover {
+        background-color: #b79312;
+    }
+form .SignUp:active {
+        background-color: #c0baad; /* Couleur pour la page active */
+        font-weight: bold; /* Mettre le texte en gras */
+        padding: 10px 15px; 
+        border-radius: 5px;
+}
