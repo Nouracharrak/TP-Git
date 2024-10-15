@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacts</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-content">
+            <ul>
+                <a href="../index.html" class="item item-1"><li>Home</li></a>
+                <a href="" class="item item-2"><li>Sign</li></a>
+                <a href="" class="item item-3"><li>Signup</li></a>
+                <a href="contacts.html" class="item item-4"><li>Contacts</li></a>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Formulaire de Contacts</h1>
+        <form action="post">
+            <label for="nom">Nom: *</label>
+            <input type="text" name="nom" id="nom" placeholder="Votre Nom" required>
+            
+            <label for="prenom">Prénom: *</label>
+            <input type="text" name="prenom" id="prenom" placeholder="Votre Prénom" required>
+            
+            <label for="number">Numéro de Téléphone: *</label>
+            <input type="text" name="number" id="number" placeholder="Votre Numéro" pattern="[0-9], {10}">
+            
+            <label for="email">Email *</label>
+            <input type="email" name="email" id="email" placeholder="Votre Email" required>
+
+            <label for="text">Commentaires : *</label>
+            <textarea name="text" id="text" rows="5" cols="33" placeholder="Votre Commentaire: " required></textarea>   
+
+            <label for="submit"></label>
+            <input type="submit" class="btn-sub">
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+        <p >&copy; - 2024</p>
+    </div>
+    </footer>
+</body>
+</html>
