@@ -1,36 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
-    <link rel="stylesheet" href="Css/Style.Css">
-</head>
-<body>
-    <h2> Sign Up</h2>
-            <form method="post" action="" enctype="multipart/form-data"> 
-    
-                <p> Required *</p>
-            <label for="name"> Name *</label>
-            <br>
-            <input type="text" id="name" name="name" placeholder="Your name" required pattern="[A-Za-z ]{2,30}" maxlength="30" title=" You can use alphabets, capital letters or not, minimum two and maximume thirteen">
-            <br>
-            <label for="Pseudo"> Pseudo *</label>
-            <br>
-            <input type="text" id="Pseudo" name="Pseudo" placeholder="Your Pseudo" required pattern="[A-Za-z ]{2,30}" maxlength="30" title="You can use alphabets, capital letters or not, minimum two and maximume thirteen""> <br>
-            <label for="email"> Email *</label>
-            <br>
-            <input type="email" id= "email" name="email" placeholder="Your email" pattern="([a-zA-Z0-9\-_.@]{5,20})" required>
-            <br>
-            <label for="password"> Create Your password * </label>
-            <br>
-            <input  type="password" id="password" name=" Mot de passe" placeholder="Your Password" required pattern=([a-zA-Z0-9\-_.@]{5,20})>
-            <br>
-            <label for="Confirm password"> Confirm your password * </label>
-            <br>
-            <input  type="Confirm password" id="Confirm password" name=" Confirm password" placeholder="Confirm password" required pattern=([a-zA-Z0-9\-_.@]{5,20})><br>
-            <label for="submit"> Sign up </label><br>
-            <input class="SignUp" type="submit" name="SignUp" value= "SignUp">
-            </form>
-</body>
+    <link rel="stylesheet" href="Css/Style.Css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-content">
+        <nav>
+          <ul>
+            <a href="Layout/index.html" class="item item-1"><li>Home</li></a>
+            <a href="OneDrive/Documents/Project-Sign/sign.html" class="item item-2"><li>Sign</li></a>
+            <a href="sign-up.html" class="item item-3"><li>Signup</li></a>
+            <a href="contacts/contacts.html" class="item item-4"
+              ><li>Contacts</li></a
+            >
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <h1>Sign Up</h1>
+    <form method="post" action="" enctype="multipart/form-data">
+      <p>Required *</p>
+      <label for="name"> Name *</label>
+      <br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your name"
+        required
+        pattern="[A-Za-z ]{2,30}"
+        maxlength="30"
+        title=" You can use alphabets, capital letters or not, minimum two and maximume thirteen" />
+      <br />
+      <label for="Pseudo"> Pseudo *</label>
+      <br />
+      <input type="text" id="Pseudo" name="Pseudo" placeholder="Your Pseudo"
+      required pattern="[A-Za-z ]{2,30}" maxlength="30" title="You can use
+      alphabets, capital letters or not, minimum two and maximume thirteen"">
+      <br />
+      <label for="email"> Email *</label>
+      <br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Your email"
+        pattern="([a-zA-Z0-9\-_.@]{5,20})"
+        required />
+      <br />
+      <label for="password"> Create Your password * </label>
+      <br />
+      <input
+        type="password"
+        id="password"
+        name=" Mot de passe"
+        placeholder="Your Password"
+        required
+        pattern="([a-zA-Z0-9\-_.@]{5,20})" />
+      <br />
+      <label for="Confirm password"> Confirm your password * </label>
+      <br />
+      <input
+        type="Confirm password"
+        id="Confirm password"
+        name=" Confirm password"
+        placeholder="Confirm password"
+        required
+        pattern="([a-zA-Z0-9\-_.@]{5,20})" /><br />
+      <label for="submit"> Sign up </label><br />
+      <input class="SignUp" type="submit" name="SignUp" value="SignUp" />
+    </form>
+
+    <div class="footer-content">
+      <footer>
+        <p>&copy; - 2024</p>
+      </footer>
+    </div>
+
+    <script type="text/javascript">
+      function validateForm() {
+        var c1 = document.forms["Form"]["champ_1"].value;
+        var c2 = document.forms["Form"]["champ_2"].value;
+        var c3 = document.forms["Form"]["champ_3"].value;
+        var c4 = document.forms["Form"]["champ_4"].value;
+        if (
+          (c1 == null || c1 == "",
+          c2 == null || c2 == "",
+          c3 == null || c3 == "",
+          c4 == null || c4 == "")
+        ) {
+          alert("Veuillez remplir tous les champs obligatoires");
+          return false;
+        }
+      }
+    </script>
+  </body>
 </html>

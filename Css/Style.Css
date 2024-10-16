@@ -1,13 +1,67 @@
-h2{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 100%;
+}
+
+.nav-content {
+    background-color: rgba(124, 123, 123, 0.8);
+}
+
+ul {
+    display: flex;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:visited,
+a:hover,
+a:active {
+    color: #000;
+}
+
+.item {
+    margin: 10px;
+    padding: 8px;
+    list-style-type: none;
+    border: 1px solid;
+    box-shadow: 2px 2px black;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.item:hover {
+    animation: .5s ease infinite bounce;
+}
+
+h1 {
     text-align: center;
 }
+
 form {
-    max-width: 400px;
+    width: 400px;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #7e815d;
     border-radius: 5px;
-    background-color: rgb(142, 92, 48);
+    background-color: rgba(124, 123, 123, 0.8);
 }
 
 form label {
@@ -17,13 +71,15 @@ form label {
     color: beige;
     padding: 1.5rem 0 0rem 0;
 }
-label a{
+
+label a {
     color: black;
 }
-label a:hover{
+
+label a:hover {
     color: beige;
     text-decoration: underline;
-    }
+}
 
 form input {
     width: 30%;
@@ -35,20 +91,51 @@ form input {
 }
 
 form button {
-        padding: 10px 15px;
-        background-color: #b79312;
-        color: beige;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    
+    padding: 10px 15px;
+    background-color: #b79312;
+    color: beige;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 form .SignUp:hover {
-        background-color: #b79312;
-    }
+    background-color: #b79312;
+}
+
 form .SignUp:active {
-        background-color: #c0baad; /* Couleur pour la page active */
-        font-weight: bold; /* Mettre le texte en gras */
-        padding: 10px 15px; 
-        border-radius: 5px;
+    background-color: #c0baad;
+    /* Couleur pour la page active */
+    font-weight: bold;
+    /* Mettre le texte en gras */
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.position{
+    position: absolute;
+  }
+
+.footer-content {
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(124, 123, 123, 0.8);
+}
+
+.footer-content p {
+    font-size: 15px;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2px);
+    }
 }
