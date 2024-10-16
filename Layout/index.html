@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulaire</title>
+  </head>
+  <body>
+    
+    <header>
+        <div class="nav-content">
+      <nav>
+        <ul>
+          <a href="" class="item item-1"><li>Home</li></a>
+          <a href="" class="item item-2"><li>Sign</li></a>
+          <a href="" class="item item-3"><li>Signup</li></a>
+          <a href="../contacts/contacts.html" class="item item-4"><li>Contacts</li></a>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+
+    <div class="footer-content">
+      <footer>
+        <p>&copy; - 2024</p>
+      </footer>
+    </div>
+
+    <script type="text/javascript">
+        function validateForm() {
+          var c1 = document.forms["Form"]["champ_1"].value;
+          var c2 = document.forms["Form"]["champ_2"].value;
+          var c3 = document.forms["Form"]["champ_3"].value;
+          var c4 = document.forms["Form"]["champ_4"].value;
+          if (c1 == null || c1 == "", c2 == null || c2 == "", c3 == null || c3 == "", c4 == null || c4 == "") {
+            alert("Veuillez remplir tous les champs obligatoires");
+            return false;
+          }
+        }
+      </script>
+
+  </body>
+</html>
